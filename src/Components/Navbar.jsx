@@ -2,41 +2,38 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function CollapsibleExample() {
+function NavBar() {
     return (
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        <Navbar collapseOnSelect expand="lg" className="Navbar">
+            <Container>
+
+                <Navbar.Brand>
+                    <img
+                        alt="logo"
+                        src="src/img/logo.png"
+                        width="80"
+                        height=""
+                        className="logoNavbar" />
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <div className="navbar-txt">
+                        <Nav className='nav-all-txt'>
+                            <Nav.Link className="nav-txt" href="#nosEscapes">Nos escapes</Nav.Link>
+                            <Nav.Link className="nav-txt" href="#miniJeux">Mini-jeux</Nav.Link>
+                            <Nav.Link className="nav-txt" href="#services">Nos services</Nav.Link>
+                        </Nav>
+                        <Nav className='login-txt'>
+                            <Nav.Link className="nav-txt" href="login">Connexion</Nav.Link>
+                            <Nav.Link className="nav-txt" href="login">Inscription</Nav.Link>
+                        </Nav>
+                    </div>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
-  }
-  
-  export default CollapsibleExample;
+}
+
+export default NavBar;
 

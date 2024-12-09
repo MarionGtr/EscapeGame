@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Nabla&display=swap');
+
+:root {
+    --black: #18171a;
+    --blue: #101D42;
+    --light-blue: #4D7C8A;
+    --yellow: #FFF07C;
+    --ivory: #F5F9E9;
+
+}
+
+.Navbar {
+    background: var(--black);
+    gap:2vw;
+
+}
+
+.logoNavbar {
+    transform: scale(1.1);
+}
+
+.nav-txt {
+    color: var(--ivory);
+    font-family: "Michroma", sans-serif;
+
+}
+
+.navbar-txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-txt:hover {
+    color: var(--yellow);
+    transform: scale(1.10);
+    transition: ease-in 0.9s;
+    
+
+}
+
+.Navbar button{
+    color: #FFF07C !important;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#responsive-navbar-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+body {
+
+    background-color: var(--blue);
+    color: var(--ivory);
+}
+
+.body-homepage{
+    background-image: url("src/img/home1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:100vw;
+}
+
+.body-homepage > .main-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vw;
+    font-family: "Nabla", system-ui;
+    /* font-family: "Michroma", sans-serif; */
+    letter-spacing: 0.8vw;
+    align-content: center;
+    align-items: center;
+ 
+}
+
+.main-title h1 {
+    font-size: 8vw;
+}   
+
+.div-carousel{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vw;
+}
