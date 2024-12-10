@@ -1,5 +1,6 @@
-import Carousel from "react-bootstrap/Carousel";
 
+import React from "react";
+import MyCarousel from "../Components/Carousel";
 
 
 const HomePage = () => {
@@ -8,12 +9,14 @@ const HomePage = () => {
     return <>
         <div className="body-homepage">
 
-            <div className="main-title">
+            <div className="div-main-title">
                 <h1>ÉNIGME EVADÉE</h1>
             </div>
+            <div className="bloc-carousel">
+                <div className="div-carousel">
+                    <MyCarousel></MyCarousel>
 
-            <div className="div-carousel">
-<Carousel></Carousel>
+                </div>
             </div>
         </div>
 

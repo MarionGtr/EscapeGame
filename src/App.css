@@ -11,9 +11,9 @@
 }
 
 .Navbar {
-    background: var(--black);
-    gap:2vw;
-
+    background: linear-gradient(#000000,#00000000) ;
+    position: absolute;
+    width:100%;
 }
 
 .logoNavbar {
@@ -36,12 +36,12 @@
     color: var(--yellow);
     transform: scale(1.10);
     transition: ease-in 0.9s;
-    
+    cursor: pointer
 
 }
 
 .Navbar button{
-    color: #FFF07C !important;
+    color: var(--yellow) !important;
 }
 
 
@@ -51,11 +51,21 @@
     
 }
 
-#responsive-navbar-nav{
+.nav-login{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
+.responsive-navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* #responsive-navbar{
+    display: flex;
+    justify-content: flex-end;
+} */
 
 body {
 
@@ -64,32 +74,64 @@ body {
 }
 
 .body-homepage{
-    background-image: url("src/img/home1.jpg");
-    background-size: cover;
+    /* background-image: url("src/img/home1.jpg"); */
+    /* background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: no-repeat; */
+    height: 70vh;
     width:100vw;
 }
 
-.body-homepage > .main-title{
+.div-main-title{
+    background-image: url("src/img/home1.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    padding-top: 10vw;
+    padding-top:14vw;
+    padding-bottom: 14vw;
     font-family: "Nabla", system-ui;
-    /* font-family: "Michroma", sans-serif; */
-    letter-spacing: 0.8vw;
+
+    letter-spacing: 0.5vw;
     align-content: center;
     align-items: center;
- 
+    border: red solid 10px;
 }
 
-.main-title h1 {
+
+
+.div-main-title h1 {
     font-size: 8vw;
+    /* font-family: "Michroma", sans-serif;
+    color: var(--yellow);
+    font-weight: bolder ; */
+    
+
 }   
 
 .div-carousel{
     display: flex;
+
     justify-content: center;
-    padding-top: 10vw;
+    border: solid 10px white;
+
+    margin: 5vw
 }
+
+.img-carousel{
+
+    object-fit: cover;
+    width:40vw;
+    height:40vw;
+
+  
+}
+
+.bloc-carousel{
+    border: #4D7C8A solid 10px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+

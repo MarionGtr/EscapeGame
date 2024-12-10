@@ -6,8 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="Navbar">
-            <Container>
-
+            <Container className='d-flex gap-5'>
                 <Navbar.Brand>
                     <img
                         alt="logo"
@@ -16,15 +15,13 @@ function NavBar() {
                         height=""
                         className="logoNavbar" />
                 </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar">
                     <div className="navbar-txt">
                         <Nav className='nav-all-txt'>
                             <Nav.Link className="nav-txt" href="#nosEscapes">Nos escapes</Nav.Link>
                             <Nav.Link className="nav-txt" href="#miniJeux">Mini-jeux</Nav.Link>
                             <Nav.Link className="nav-txt" href="#services">Nos services</Nav.Link>
-                        </Nav>
-                        <Nav className='login-txt'>
                             <Nav.Link className="nav-txt" href="login">Connexion</Nav.Link>
                             <Nav.Link className="nav-txt" href="login">Inscription</Nav.Link>
                         </Nav>
