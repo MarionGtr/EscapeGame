@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --black: #18171a;
@@ -11,9 +12,9 @@
 }
 
 .Navbar {
-    background: linear-gradient(#000000,#00000000) ;
+    background: linear-gradient(#000000, #00000000);
     position: absolute;
-    width:100%;
+    width: 100%;
 }
 
 .logoNavbar {
@@ -24,13 +25,16 @@
 .nav-txt {
     color: var(--ivory);
     font-family: "Michroma", sans-serif;
+    text-decoration: none;
+
 
 }
 
-.navbar-txt{
+.navbar-txt {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    
 }
 
 .nav-txt:hover {
@@ -38,34 +42,38 @@
     transform: scale(1.10);
     transition: ease-in 0.9s;
     cursor: pointer
-
 }
 
-.Navbar button{
+.Navbar button {
     color: var(--yellow) !important;
+    border: solid 1px var(--light-blue)
+}
+
+.navbar-toggler-icon{
+    background-image: none;
 }
 
 
 #nav {
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
-.nav-login{
+.nav-login {
     display: flex;
     justify-content: flex-end;
 }
 
-.responsive-navbar-nav{
+.responsive-navbar-nav {
     display: flex;
     justify-content: flex-end;
 
 }
 
 /* #responsive-navbar{
-    display: flex;
-    justify-content: flex-end;
+display: flex;
+gap:2vw;
 } */
 
 body {
@@ -74,23 +82,23 @@ body {
     color: var(--ivory);
 }
 
-.body-homepage{
+.body-homepage {
     /* background-image: url("src/img/home1.jpg"); */
     /* background-size:cover;
     background-position: center;
     background-repeat: no-repeat; */
     height: 70vh;
-    width:100vw;
+    width: 100vw;
 }
 
-.div-main-title{
+.div-main-title {
     background-image: url("src/img/home1.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    padding-top:14vw;
+    padding-top: 14vw;
     padding-bottom: 14vw;
     font-family: "Nabla", system-ui;
 
@@ -107,29 +115,87 @@ body {
     /* font-family: "Michroma", sans-serif;
     color: var(--yellow);
     font-weight: bolder ; */
-    
 
-}   
 
-.div-carousel{
+}
+
+.div-carousel {
     display: flex;
     justify-content: center;
     margin: 5vw;
 }
 
-.img-carousel{
+.img-carousel {
 
     object-fit: cover;
-    width:40vw;
-    height:40vw;
+    width: 40vw;
+    height: 40vw;
 
-  
+
 }
 
-.bloc-carousel{
+.bloc-carousel {
 
     align-content: center;
     display: flex;
     justify-content: center;
 }
 
+.formulaire {
+    padding-top: 10vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulaire h1 {
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+    border-bottom: solid  var(--light-blue);
+}
+
+.form-btn {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 1.2vw;
+    text-transform: uppercase;
+    font-family: "Michroma", sans-serif;
+    flex-direction: row;
+    background-color: var(--light-blue);
+    color: var(--ivory);
+    border:none;
+    border-radius: 16px ;
+
+}
+
+.form-btn:hover, .form-btn:focus{
+    background-color:var(--yellow);
+    color: var(--blue);
+}
+
+#formBasicName, #formBasicEmail, #formBasicPassword,#formBasicLastName,#formBasicFirstName,#formBasicTel{
+    font-style: oblique;
+    border-radius: 14px;
+}
+
+#formBasicName:focus, #formBasicEmail:focus, #formBasicPassword:focus,#formBasicLastName:focus,#formBasicFirstName:focus,#formBasicTel:focus{
+background-color: var(--yellow);
+
+}
+.form-label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+.div-btn-create {
+    display: flex;
+    justify-content: center;
+}

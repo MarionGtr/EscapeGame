@@ -6,7 +6,7 @@ const Login = () => {
     
     
     
-    return <Container className="d-flex flex-column align-items-center mt-3">
+    return <Container className="d-flex flex-column align-items-center">
     <h1>Connexion</h1>
     <Form >
       <Form.Group className="mb-3" controlId="formBasicEmail">
