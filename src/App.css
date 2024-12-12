@@ -73,6 +73,18 @@
 
 }
 
+/* #responsive-navbar{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.nav-all-txt{
+    display: flex;
+    gap:2vw;
+    justify-content: flex-end;
+
+}
+
 /* -----------BODY----------- */
 
 body {

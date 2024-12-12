@@ -22,9 +22,10 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar">
                     <div className="navbar-txt">
                         <Nav className='nav-all-txt'>
-                            <Nav.Link className="nav-txt" href="#nosEscapes">Nos escapes</Nav.Link>
-                            <Nav.Link className="nav-txt" href="#miniJeux">Mini-jeux</Nav.Link>
-                            <Nav.Link className="nav-txt" href="#services">Nos services</Nav.Link>
+                            <Link className="nav-txt" href="#nosEscapes">Nos escapes</Link>
+                            <Link className="nav-txt" href="#miniJeux">Mini-jeux</Link>
+                            <Link className="nav-txt" href="#services">Nos services</Link>
+                            
                             <Link to={"/login"} className="nav-txt" href="#login">Connexion</Link>
                             <Link to={"/signin"} className="nav-txt" href="#signin">Inscription</Link>
                         </Nav>
