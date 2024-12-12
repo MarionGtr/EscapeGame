@@ -26,7 +26,7 @@ const Login = () => {
     </div>
     <div className="div-btn-create">
         <Button className="form-btn" type="submit">
-          Créer utilisateur
+          SE CONNECTER
         </Button>
       </div>
     </Form>
