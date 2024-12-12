@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return <>
         <Navbar collapseOnSelect expand="lg" className="Navbar">
-            <Container className='d-flex gap-5'>
+            <Container className='container-navbar'>
                 <Navbar.Brand>
                     <Link to='/'>
                     <img
