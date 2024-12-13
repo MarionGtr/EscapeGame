@@ -41,6 +41,10 @@
     text-decoration: none;
 }
 
+.nav-dropdown:hover{
+    color: var(--yellow);
+}
+
 .dropdown-toggle{
     color: var(--ivory) !important;
     font-family: "Michroma", sans-serif;
