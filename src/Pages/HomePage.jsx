@@ -6,6 +6,8 @@ import EscapeCard from "../Components/EscapeCard";
 
 const HomePage = () => {
 
+// --------------FONCTION POUR LE TITRE FLOU-----------
+
     (function () {
         var addEvent = function (object, type, callback) {
             if (object == null || typeof object == "undefined") return;
@@ -93,6 +95,8 @@ const HomePage = () => {
         detectInput("mousemove");
         detectInput("touchmove");
     })();
+
+//-------------------------------------
 
 
     return <>

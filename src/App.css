@@ -35,6 +35,17 @@
 
 }
 
+.nav-dropdown{
+    color: var(--ivory) !important;
+    font-family: "Michroma", sans-serif;
+    text-decoration: none;
+}
+
+.dropdown-toggle{
+    color: var(--ivory) !important;
+    font-family: "Michroma", sans-serif;
+    text-decoration: none;
+}
 .navbar-txt {
     display: flex;
     flex-direction: row;
@@ -84,7 +95,7 @@
 .nav-all-txt {
     display: flex;
     gap: 2vw;
-    justify-content: flex-end;
+    align-items: center;
 
 }
 
