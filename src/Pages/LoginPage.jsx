@@ -1,40 +1,37 @@
-
 import { Button, Container, Form } from "react-bootstrap";
 
-const Login = () => {
-    
-    
-    
-    
-    return <Container className="d-flex flex-column align-items-center mt-3">
-    <h1>Connexion</h1>
-    <Form >
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Saisir une adresse mail"
-         
-          // value={user.mail}
-           required />
-      </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Mot de passe</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Saisir le mot de passe"
-         
-          // value={user.mdp}
-           required />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Se connecter
-      </Button>
+const Login = () => {
+
+
+
+
+  return <Container className='formulaire'>
+
+<h1>Connexion</h1>
+
+    <Form>
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Email</label>
+    </div>
+    <br />
+    <div className="group">
+      <input required="" type="password" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Mot de passe</label>
+    </div>
+    <div className="div-btn-create">
+        <Button className="form-btn" type="submit">
+          SE CONNECTER
+        </Button>
+      </div>
     </Form>
   </Container>
 
-  
 }
- 
+
 export default Login;

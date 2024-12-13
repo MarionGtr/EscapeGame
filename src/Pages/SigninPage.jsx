@@ -3,52 +3,70 @@ import { Container, Form } from "react-bootstrap"
 import Button from 'react-bootstrap/Button';
 
 const Signin = () => {
-    
-    
-    
-    return<Container className="d-flex flex-column align-items-center">
-   
-    <h1>Créer un utilisateur</h1>
-    
-     <Form action="/createUser" method='POST' >
-       <Form.Group className="mb-3" controlId="formBasicName">
-         <Form.Label>Nom</Form.Label>
-         <Form.Control 
-         type="text" 
-         placeholder="Saisir un nom"
-        //  onChange={handleChange} required
-         name="nom"
-         />
- 
-       </Form.Group>
-       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Label>Adresse mail</Form.Label>
-         <Form.Control
-          type="email"
-          placeholder="Saisir une adresse mail" 
-        //   onChange={handleChange} required
-          name="mail"
-          />
-     
-       </Form.Group>
- 
-       <Form.Group className="mb-3" controlId="formBasicPassword">
-         <Form.Label>Mot de passe</Form.Label>
-         <Form.Control 
-         type="password"
-          placeholder="Mot de passe"
-        //   onChange={handleChange} required
-          name="mdp"
-          />
-       </Form.Group>
- 
-       <Button variant="primary" type="submit">
-         Créer utilisateur
-       </Button>
-     </Form>
+
+
+
+  return <Container className="formulaire">
+
+    <h1>Créer votre profil</h1>
+
+    <Form>
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Nom d'utilisateur</label>
+    </div>
+
+    <br />
+
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Email</label>
+    </div>
+
+        <br />
+
+    <div className="group">
+      <input required="" type="password" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Mot de passe</label>
+    </div>
+    <br />
+
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Nom</label>
+    </div>
+    <br />
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Prénom</label>
+    </div>
+    <br />
+    <div className="group">
+      <input required="" type="text" className="input"></input>
+      <span className="highlight"></span>
+      <span className="bar"></span>
+      <label>Téléphone</label>
+    </div>
+    <br />
+      <div className="div-btn-create">
+        <Button className="form-btn" type="submit">
+          Créer utilisateur
+        </Button>
+      </div>
+    </Form>
   </Container>
- 
+
 
 }
- 
+
 export default Signin
