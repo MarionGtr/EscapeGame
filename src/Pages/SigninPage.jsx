@@ -47,7 +47,7 @@ const SigninPage = () => {
 
     <h1>Créer votre profil</h1>
 
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className= "bloc-form">
     <div className="group">
       <input required={true} type="text" className="input"
        onChange={(e) => setusername(e.target.value)}
