@@ -175,15 +175,14 @@ body {
 /* -------FORMULAIRE------------------------------- */
 
 
-.form{
-display: flex;
-width: 30vw;
-
+.bloc-form{
+width:fit-content;
+display: block;
 }
 
 .formulaire {
     padding-top: 10vw;
-    width: 50vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -537,5 +536,31 @@ label {
 
 /* -------CARD-------------------------------------- */
 
+.div-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border:#F5F9E9 1px solid;
+}
 
+.div-titre-card{
+    display: flex;
+    border:#F5F9E9 1px solid;
+    margin:2vw;
+}
+
+.div-bloc-card{
+    display: flex;
+    flex-direction: row;
+    gap:3vw;
+    margin: 2vw;
+}
+
+.EscapeCard{
+    display: flex;
+    flex-direction: row;
+    border:#F5F9E9 1px solid;
+
+}
 

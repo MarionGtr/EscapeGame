@@ -10,7 +10,7 @@ const Signin = () => {
 
     <h1>Créer votre profil</h1>
 
-    <Form>
+    <Form className= "bloc-form">
     <div className="group">
       <input required="" type="text" className="input"></input>
       <span className="highlight"></span>

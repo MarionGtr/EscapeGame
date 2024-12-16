@@ -4,7 +4,7 @@ import EscapeCard from "../Components/EscapeCard";
 
 const HomePage = () => {
 
-    //---------FONCTION TITRE FLOU-----------//
+  //---------FONCTION TITRE FLOU-----------//
   React.useEffect(() => {
     function setStyle(element, styles) {
       if (!element) return; // Vérifie si l'élément existe
@@ -36,7 +36,7 @@ const HomePage = () => {
 
     detectMouseMove(); // Appliquer la détection
 
-  
+
     return () => {
       const containerTitre = document.querySelector(".container-titre");
       if (containerTitre) {
@@ -82,7 +82,14 @@ const HomePage = () => {
           </div>
         </div>
         <div className="div-card">
+          <div className="div-titre-card">
+          <h1>NOS ESCAPES GAMES</h1>
+          </div>
+          <div className="div-bloc-card">
           <EscapeCard />
+          <EscapeCard />
+          <EscapeCard />
+          </div>
         </div>
       </div>
     </>
