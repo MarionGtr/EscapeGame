@@ -1,8 +1,42 @@
-import React from "react";
+
+import React, { useContext } from "react";
 import MyCarousel from "../Components/Carousel";
 import EscapeCard from "../Components/EscapeCard";
+import { useNavigate } from "react-router-dom";
+import AuthContext from "../Context/AuthContext";
+
 
 const HomePage = () => {
+    const {isAuthenticated, user} = useContext(AuthContext);
+    // const navigate = useNavigate();
+    // (function () {
+    //     var addEvent = function (object, type, callback) {
+    //         if (object == null || typeof object == "undefined") return;
+    //         if (object.addEventListener) {
+    //             object.addEventListener(type, callback, false);
+    //         } else if (object.attachEvent) {
+    //             object.attachEvent("on" + type, callback);
+    //         } else {
+    //             object["on" + type] = callback;
+    //         }
+    //     };
+
+    //     function getOuterWidth(element) {
+    //         if (!element) return 0; // Vérifie si l'élément existe
+    //         const style = getComputedStyle(element);
+    //         return (
+    //             element.offsetWidth +
+    //             parseFloat(style.marginLeft) +
+    //             parseFloat(style.marginRight)
+    //         );
+    //     }
+
+    //     function setStyle(element, styles) {
+    //         if (!element) return; // Vérifie si l'élément existe
+    //         for (const property in styles) {
+    //             element.style[property] = styles[property];
+    //         }
+    //     }
 
   //---------FONCTION TITRE FLOU-----------//
   React.useEffect(() => {

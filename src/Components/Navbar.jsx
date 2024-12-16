@@ -40,7 +40,7 @@ function NavBar() {
                             <Link className="nav-txt" href="#profil">Profil</Link>
 
                             <Link to={"/login"} className="nav-txt" href="#login">Connexion</Link>
-                            <Link to={"/signin"} className="nav-txt" href="#signin">Inscription</Link>
+                            <Link to={"/SigninPage"} className="nav-txt" href="#signin">Inscription</Link>
                         </Nav>
                     </div>
                 </Navbar.Collapse>
