@@ -1,11 +1,14 @@
 
-import React from "react";
+import React, { useContext } from "react";
 import MyCarousel from "../Components/Carousel";
 import EscapeCard from "../Components/EscapeCard";
+import { useNavigate } from "react-router-dom";
+import AuthContext from "../Context/AuthContext";
 
 
 const HomePage = () => {
-
+    const {isAuthenticated, user} = useContext(AuthContext);
+    // const navigate = useNavigate();
     (function () {
         var addEvent = function (object, type, callback) {
             if (object == null || typeof object == "undefined") return;
@@ -126,6 +129,8 @@ const HomePage = () => {
                     </div>
                     <p className="blur">ENIGMES EVADEES</p>
                     <p className="focus">ENIGMES EVADEES</p>
+                    {isAuthenticated ? "Vous êtes connecté" : "Vous n'êtes pas connecté"} 
+                    {user.id && <p>Email : {user.id}</p>}
                 </div>
 
             </div>
