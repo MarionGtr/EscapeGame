@@ -14,12 +14,18 @@
 
 }
 
+h1{
+    font: "Michroma", sans-serif;
+}
+
 /*---------------- NAVBAR --------------------------------------*/
 
 .Navbar {
     background: linear-gradient(#000000, #00000000);
-    position: absolute;
+    position: fixed;
     width: 100%;
+    z-index: 1000;
+    
 }
 
 .logoNavbar {
@@ -152,7 +158,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 5vw;
-    border: #4D7C8A solid 5px;
 }
 
 .img-carousel {
@@ -164,12 +169,50 @@ body {
 
 }
 
-.bloc-carousel {
+.bloc-description {
 
     align-content: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+.div-description{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2vw;
+
+}
+
+
+.div-apropos h1{
+    font-family: "Michroma", sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 50vw;
+}
+
+.div-para p{
+    display: flex;
+ justify-content: center;
+   
+}
+
+.div-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 
 
 /* -------FORMULAIRE------------------------------- */
@@ -204,7 +247,7 @@ display: block;
     padding: 10px 20px;
     border-radius: 7px;
     border: 1px solid var(--yellow);
-    font-size: 2vw;
+    font-size: 1vw;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
@@ -541,26 +584,105 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border:#F5F9E9 1px solid;
+
 }
 
 .div-titre-card{
     display: flex;
-    border:#F5F9E9 1px solid;
+
     margin:2vw;
+    font: "Michroma", sans-serif;
 }
+
 
 .div-bloc-card{
     display: flex;
     flex-direction: row;
     gap:3vw;
     margin: 2vw;
+   
 }
 
 .EscapeCard{
     display: flex;
     flex-direction: row;
-    border:#F5F9E9 1px solid;
-
+    border:var(--yellow) 1px solid;
+    border-radius: 10px;
+    
 }
+
+  
+  .EscapeCard {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0.8vw;
+
+    box-shadow: 0px 10px 20px -2px rgba(134, 132, 132, 0.801);
+  
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 10px;
+  
+  }
+  
+  .EscapeCard :hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.9s;
+  
+  }
+  
+  .card-title {
+    color: var(--black) !important;
+    font-weight: bolder;
+    font-family: "Michroma", sans-serif; 
+    text-transform: uppercase;
+    
+  
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass', sans-serif; 
+    padding-top: 1vw;
+    background-color: var(--ivory);
+    /* text-transform: uppercase; */
+  
+  }
+  
+  .card-btn {
+    background-color: var(--blue) !important;
+    border: double 1px  var(--black) !important;
+    box-shadow: 0px 10px 20px -2px rgba(134, 132, 132, 0.801);
+    display: flex;
+    width:80%;
+    justify-content: center;
+    margin-top: 1vw;
+  
+  
+  
+  
+  }
+  
+  .card-btn:hover {
+    background-color: var(--yellow) !important;
+    color: var(--black);
+  
+  
+  }
+
+  .div-card h1 {
+    font-family: "Michroma", sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 50vw;
+}
+  
 

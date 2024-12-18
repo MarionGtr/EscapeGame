@@ -1,42 +1,15 @@
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import MyCarousel from "../Components/Carousel";
 import EscapeCard from "../Components/EscapeCard";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../Context/AuthContext";
+import EscapeService from "../Services/EscapeService";
 
 
 const HomePage = () => {
-    const {isAuthenticated, user} = useContext(AuthContext);
-    // const navigate = useNavigate();
-    // (function () {
-    //     var addEvent = function (object, type, callback) {
-    //         if (object == null || typeof object == "undefined") return;
-    //         if (object.addEventListener) {
-    //             object.addEventListener(type, callback, false);
-    //         } else if (object.attachEvent) {
-    //             object.attachEvent("on" + type, callback);
-    //         } else {
-    //             object["on" + type] = callback;
-    //         }
-    //     };
+  const { isAuthenticated, user } = useContext(AuthContext);
 
-    //     function getOuterWidth(element) {
-    //         if (!element) return 0; // Vérifie si l'élément existe
-    //         const style = getComputedStyle(element);
-    //         return (
-    //             element.offsetWidth +
-    //             parseFloat(style.marginLeft) +
-    //             parseFloat(style.marginRight)
-    //         );
-    //     }
-
-    //     function setStyle(element, styles) {
-    //         if (!element) return; // Vérifie si l'élément existe
-    //         for (const property in styles) {
-    //             element.style[property] = styles[property];
-    //         }
-    //     }
 
   //---------FONCTION TITRE FLOU-----------//
   React.useEffect(() => {
@@ -110,19 +83,34 @@ const HomePage = () => {
             <p className="focus">ENIGMES EVADEES</p>
           </div>
         </div>
-        <div className="bloc-carousel">
+
+        <div className="bloc-description">
           <div className="div-carousel">
             <MyCarousel />
           </div>
+
+          <div className="div-description">
+            <div className="div-apropos">
+              <h1>À PROPOS DE NOUS</h1>
+            </div>
+            <div className="div-para">
+              <p>"Énigmes Évadées" a été créée avec une passion commune pour les défis intellectuels et les
+                aventures captivantes. Notre équipe dévouée travaille sans relâche pour concevoir des Escape Games
+                originaux, stimulants et divertissants qui transportent les participants dans des univers
+                extraordinaires</p>
+            </div>
+          </div>
+
         </div>
         <div className="div-card">
           <div className="div-titre-card">
-          <h1>NOS ESCAPES GAMES</h1>
+            <h1>NOS ESCAPES GAMES</h1>
           </div>
           <div className="div-bloc-card">
-          <EscapeCard />
-          <EscapeCard />
-          <EscapeCard />
+            {fetchEscapeGame.map((data) => {
+              return <EscapeCard EscapeCard={data} key={data.id} />
+            })}
+           
           </div>
         </div>
       </div>
