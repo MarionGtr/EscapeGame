@@ -955,3 +955,17 @@ select:focus {
   .span-bonjour{
     font-family: 10px;
   }
+
+.localisation{
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.localisation:hover{
+transform: scale(3);
+}
+
+  .text-center{
+    background-color: #0e121358;
+  }
+

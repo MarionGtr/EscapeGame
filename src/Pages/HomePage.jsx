@@ -5,7 +5,7 @@ import EscapeCard from "../Components/EscapeCard";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../Context/AuthContext";
 import EscapeService from "../Services/EscapeService";
-
+import Footer from "../Components/Footer"
 
 const HomePage = () => {
   const { isAuthenticated, user } = useContext(AuthContext);
@@ -107,10 +107,16 @@ const HomePage = () => {
             <h1>NOS ESCAPES GAMES</h1>
           </div>
           <div className="div-bloc-card">
-            {fetchEscapeGame.map((data) => {
+            {/* {fetchEscapeGame.map((data) => {
               return <EscapeCard EscapeCard={data} key={data.id} />
-            })}
+            })} */}
            
+          </div>
+          
+        </div>
+        <div className="bloc-footer">
+          <div className="div-footer">
+            <Footer />
           </div>
         </div>
       </div>
