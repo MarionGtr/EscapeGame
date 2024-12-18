@@ -9,6 +9,22 @@ import Footer from "../Components/Footer"
 
 const HomePage = () => {
   const { isAuthenticated, user } = useContext(AuthContext);
+  const [data, setData] = useState([])
+
+  const fetchEscapeGame = async () => {
+    try {
+      const response = await EscapeService.getAllEscape()
+      setData(response.data)
+        console.log(response.data)
+    } catch (error) {
+      console.log("error")
+    }
+  }
+
+  useEffect(() => {
+    fetchEscapeGame()
+}, [])
+
 
 
   //---------FONCTION TITRE FLOU-----------//
@@ -107,10 +123,9 @@ const HomePage = () => {
             <h1>NOS ESCAPES GAMES</h1>
           </div>
           <div className="div-bloc-card">
-            {/* {fetchEscapeGame.map((data) => {
-              return <EscapeCard EscapeCard={data} key={data.id} />
-            })} */}
-           
+          {data.map((item) => {
+            return <EscapeCard key={item.id_escape_game} escapeGame={item} />
+            })}
           </div>
           
         </div>
