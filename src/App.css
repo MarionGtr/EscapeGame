@@ -606,10 +606,25 @@ align-items: center;
 .EscapeCard{
     display: flex;
     flex-direction: row;
-    border:var(--yellow) 1px solid;
-    border-radius: 10px;
-    
+    border:#F5F9E9 1px solid;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   .EscapeCard {
