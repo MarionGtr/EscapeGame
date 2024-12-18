@@ -564,3 +564,257 @@ border:#F5F9E9 1px solid;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc-calendrier{
+    display: flex;
+   padding: 10vw;
+}
+
+.calendar-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #5a9bff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #5a9bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #4a8cd4;
+}
+
+.submit-button:active {
+  background-color: #3a7bb2;
+}
+
+.bloc-legal{
+    
+    padding: 10vw;
+    
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+}
+
+.legal-1{
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre prononcée et diffuse */
+    transition: box-shadow 0.3s ease-in-out; 
+    animation: mymove 3s forwards;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+   
+}
+
+.legal-2{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre prononcée et diffuse */
+    transition: box-shadow 0.3s ease-in-out;
+    animation: mymove 3s forwards;
+    margin-top: 2vw;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+}
+
+.legal-3{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease-in-out; 
+    animation: mymove 3s forwards;
+    margin-top: 2vw;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+}
+
+.p-legal{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes mymove {
+   0%   {top: 0px; background:#101D42; width: 100px;}
+  100% {top: 200px; background:#4D7C8A; width: 900px;}
+  }
+
+  .span-bonjour{
+    font-family: 10px;
+  }

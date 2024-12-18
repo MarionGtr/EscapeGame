@@ -5,7 +5,6 @@ function setAxiosToken() {
     const token = localStorage.getItem('token');
     if (token) {
         axios.defaults.headers["Authorization"] = "Bearer " + token;
-      // le token est valide
     }else{ 
         delete axios.defaults.headers["Authorization"];
     }
@@ -14,7 +13,6 @@ function setAxiosToken() {
 function logout() {
     localStorage.removeItem('token');
     delete axios.defaults.headers["Authorization"];
-    // déconnecter l'utilisateur et supprimer le token de localStorage
 }
 
 function getUser() {
@@ -22,11 +20,10 @@ function getUser() {
     if (token && isValid()) {
         const decodedToken = jwtDecode(token);
        
-        // le token est valide et contient les informations de l'utilisateur
-        
         return {
             id: decodedToken.id,
             email: decodedToken.email
+            
         }
     } else {
         return{};
@@ -40,13 +37,12 @@ function isValid() {
         const decodedToken = jwtDecode(token);
         console.log(decodedToken);
         if (decodedToken.exp * 1000 < new Date().getTime()){
-            logout();  // le token est expiré, déconnecter l'utilisateur et supprimer le token de localStorage
+            logout();  
             return false;   
         }else{
             setAxiosToken();
-            return true;   // le token est valide mais expiré
+            return true;   
         }
-       // verifier si le token est valide   
     }else{
         logout();
         return false;
@@ -54,3 +50,5 @@ function isValid() {
 }
 
 export default {isValid, setAxiosToken, getUser, logout}; 
+
+
