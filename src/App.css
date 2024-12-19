@@ -294,94 +294,6 @@ body {
     transform: skewX(-20deg);
 }
 
-/* --------------MiniJeux----------------- */
-
-.mini-jeux-image {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-.mini-jeux-page {
-    text-align: center;
-    padding: 100px;
-  }
-  
-  .div-titre-card {
-    margin-bottom: 30px;
-  }
-  
-  .mini-jeux-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .mini-jeu {
-    background: #0f0966;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .mini-jeu h2 {
-    margin-bottom: 15px;
-  }
-  
-  .mini-jeu button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .mini-jeu button:hover {
-    background: #0056b3;
-  }
-
-  /* --------------Horreur----------------- */
-  .game-container{
-    padding: 120px;
-    align-items: center;
-  }
-  .image-container {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-  }
-  .background-image{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    border: 2px solid #000;
-  }
-  /* --------------Zone clickable ------ */
-
-  .zone {
-    position: absolute;
-  top: 30%; /* Ajustez pour la position verticale */
-  left: 40%; /* Ajustez pour la position horizontale */
-  width: 50px; /* Largeur de la zone cliquable */
-  height: 50px; /* Hauteur de la zone cliquable */
-  background-color: rgba(0, 255, 0, 0.3); /* Transparence pour tests */
-  cursor: pointer;
-  z-index: 2; /* Place la zone cliquable au-dessus de l'image */
-  }
-
-  .victory-message{
-     margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: green;
-  z-index: 3;
-  position: relative;
-  }
 
 @keyframes sh02 {
     from {
@@ -1005,3 +917,169 @@ select:focus {
     
     transform: rotate(360deg);
   }
+/* --------------MiniJeux----------------- */
+
+.mini-jeux-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.mini-jeux-page {
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .div-titre-card {
+    margin-bottom: 30px;
+  }
+  
+  .mini-jeux-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .mini-jeu {
+    background: #0f0966;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .mini-jeu h2 {
+    margin-bottom: 15px;
+  }
+  
+  .mini-jeu button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mini-jeu button:hover {
+    background: #0056b3;
+  }
+
+  /* --------------Horreur----------------- */
+  .game-container{
+    padding: 120px;
+    align-items: center;
+  }
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .background-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border: 2px solid #000;
+  }
+  /* --------------Zone clickable ------ */
+
+  .zone {
+    position: absolute;
+  top: 30%; /* Ajustez pour la position verticale */
+  left: 40%; /* Ajustez pour la position horizontale */
+  width: 50px; /* Largeur de la zone cliquable */
+  height: 50px; /* Hauteur de la zone cliquable */
+  background-color: rgba(0, 255, 0, 0.3); /* Transparence pour tests */
+  cursor: pointer;
+  z-index: 2; /* Place la zone cliquable au-dessus de l'image */
+  }
+
+  .victory-message{
+     margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  z-index: 3;
+  position: relative;
+  }
+
+  /* -----------------------------DETAILS PAGE--------------------------------- */
+.page-details {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vw;
+    width: 80%;
+    gap: 6vw;
+}
+.partie-gauche {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vw;
+    gap: 8vw;
+}
+.bloc-titre-details {
+}
+.bloc-titre-details h1 {
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+}
+.bloc-description-details {
+    padding-bottom: 2vw;
+    border-bottom: solid var(--light-blue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3a7ab249;
+    padding: 2vw;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+.bloc-img {
+    display: flex;
+}
+.bloc-img img {
+    display: flex;
+    width: 40vw;
+}
+
+.sous-bloc-droite {
+    margin-top: 2vw;
+}
+.difficulte {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 100%;
+    font-family: "Michroma", sans-serif;
+}
+.duree-prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vw;
+    font-family: "Michroma", sans-serif;
+}
+.duree {
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-family: "Michroma", sans-serif;
+}
+.prix {
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-family: "Michroma", sans-serif;
+}
