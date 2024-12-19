@@ -71,10 +71,8 @@ function NavBar() {
                   <NavDropdown.Item href="#action/3.4">
                     Escape à domicile
                   </NavDropdown.Item>
+               
                   <NavDropdown.Item href="#action/3.5">
-                    <Link to="/legal">Legal</Link>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.6">
                     <Link to="/Booking">Réservation</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
