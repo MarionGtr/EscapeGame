@@ -13,6 +13,8 @@ import Horreur from './Pages/Horreur'
 import LegalPage from './Pages/LegalPage'
 import BookingPage from './Components/BookingPage'
 import DetailsPage from './Pages/DetailsPage'
+import Footer from './Components/Footer'
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(AuthService.isValid());
@@ -22,6 +24,7 @@ function App() {
   <AuthContext.Provider value={{isAuthenticated, setIsAuthenticated, user, setUser}}>
     <BrowserRouter>
       <Navbar />
+      
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/SigninPage' element={<SigninPage />}></Route>
@@ -34,8 +37,11 @@ function App() {
         <Route path='/horreur' element={<Horreur />}></Route>
         
       </Routes>
+     <Footer/>
     </BrowserRouter>
+    
     </AuthContext.Provider>
+   
   </>
 
 }
