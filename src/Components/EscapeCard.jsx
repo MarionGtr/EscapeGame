@@ -8,7 +8,9 @@ const EscapeCard = ({ escapeGame }) => {
         <Card.Img 
           className='card-img' 
           variant="top" 
-          src={`http://localhost:5173/${escapeGame.image_url}`}
+          
+          src={`/images/${escapeGame.image_url}`} 
+         
         />
         <Card.Body>
           <Card.Title>{escapeGame.name}</Card.Title>
