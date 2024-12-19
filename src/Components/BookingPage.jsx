@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import BookingPage from "../Components/BookingPage"
+import { Container } from 'react-bootstrap';
 
 // ----------Fonction pour obtenir la date au format Année-mois-jour-----------------
 const getCurrentDate = () => {
@@ -79,7 +80,9 @@ const Calendar = () => {
     return availableTimes.filter((time) => !reservedTimes[selectedEscapeGame][selectedDate]?.includes(time));
   };
 
-  return (
+  return <Container>
+
+    
     <div className='bloc-calendrier'>
     <div className="calendar-container">
       <h2>Réservez votre escape game</h2>
@@ -135,7 +138,7 @@ const Calendar = () => {
       </form>
     </div>
     </div>
-  );
+    </Container>
 };
 
 export default Calendar;

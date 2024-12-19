@@ -9,7 +9,8 @@ import AuthService from './Services/AuthService'
 import AuthContext from './Context/AuthContext'
 import { useState } from 'react';
 import LegalPage from './Pages/LegalPage'
-import BookingPage from './Pages/BookingPage'
+import BookingPage from './Components/BookingPage'
+import DetailsPage from './Pages/DetailsPage'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(AuthService.isValid());
@@ -25,7 +26,8 @@ function App() {
         <Route path='/login' element={<LoginPage />}></Route>
         <Route path='/legal' element={<LegalPage />}></Route>
         <Route path='/Booking' element={<BookingPage />}></Route>
-        
+        <Route path='/details' element={<DetailsPage />}></Route>
+
       </Routes>
     </BrowserRouter>
     </AuthContext.Provider>
