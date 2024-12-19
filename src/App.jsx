@@ -33,9 +33,7 @@ function App() {
         <Route path='/legal' element={<LegalPage />}></Route>
         <Route path='/Booking' element={<BookingPage />}></Route>
         <Route path='/details' element={<DetailsPage />}></Route>
-        
         <Route path ='/Profil' element={<ProfilPage />}></Route>
-
         <Route path='/jeux' element={<MiniJeux />}></Route>
         <Route path='/horreur' element={<Horreur />}></Route>
         
@@ -49,4 +47,4 @@ function App() {
 
 }
 
-export default App
+export default App;
