@@ -14,12 +14,18 @@
 
 }
 
+h1{
+    font: "Michroma", sans-serif;
+}
+
 /*---------------- NAVBAR --------------------------------------*/
 
 .Navbar {
     background: linear-gradient(#000000, #00000000);
-    position: absolute;
+    position: fixed;
     width: 100%;
+    z-index: 1000;
+    
 }
 
 .logoNavbar {
@@ -152,7 +158,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 5vw;
-    border: #4D7C8A solid 5px;
 }
 
 .img-carousel {
@@ -160,16 +165,55 @@ body {
     object-fit: cover;
     width: 40vw;
     height: 40vw;
-
+    
 
 }
 
-.bloc-carousel {
+.bloc-description {
 
     align-content: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+.div-description{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2vw;
+
+}
+
+
+.div-apropos h1{
+    font-family: "Michroma", sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 50vw;
+}
+
+.div-para p{
+    display: flex;
+ justify-content: center;
+   
+}
+
+.div-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 70px;
+}
+
 
 
 /* -------FORMULAIRE------------------------------- */
@@ -204,7 +248,7 @@ display: block;
     padding: 10px 20px;
     border-radius: 7px;
     border: 1px solid var(--yellow);
-    font-size: 2vw;
+    font-size: 1vw;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
@@ -630,20 +674,23 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border:#F5F9E9 1px solid;
+
 }
 
 .div-titre-card{
     display: flex;
-    border:#F5F9E9 1px solid;
+
     margin:2vw;
+    font: "Michroma", sans-serif;
 }
+
 
 .div-bloc-card{
     display: flex;
     flex-direction: row;
     gap:3vw;
     margin: 2vw;
+   
 }
 
 .EscapeCard{
@@ -653,3 +700,610 @@ border:#F5F9E9 1px solid;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .EscapeCard {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0.8vw;
+
+    box-shadow: 0px 10px 20px -2px rgba(134, 132, 132, 0.801);
+  
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 10px;
+  
+  }
+  
+  .EscapeCard :hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.9s;
+  
+  }
+  
+  .card-title {
+    color: var(--black) !important;
+    font-weight: bolder;
+    font-family: "Michroma", sans-serif; 
+    text-transform: uppercase;
+    
+  
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass', sans-serif; 
+    padding-top: 1vw;
+    background-color: var(--ivory);
+    /* text-transform: uppercase; */
+  
+  }
+  
+  .card-btn {
+    background-color: var(--blue) !important;
+    border: double 1px  var(--black) !important;
+    box-shadow: 0px 10px 20px -2px rgba(134, 132, 132, 0.801);
+    display: flex;
+    width:80%;
+    justify-content: center;
+    margin-top: 1vw;
+  
+  
+  
+  
+  }
+  
+  .card-btn:hover {
+    background-color: var(--yellow) !important;
+    color: var(--black);
+  
+  
+  }
+
+  .div-card h1 {
+    font-family: "Michroma", sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vw;
+    border-bottom: solid var(--light-blue);
+    width: 50vw;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc-calendrier{
+    display: flex;
+   padding: 10vw;
+}
+
+.calendar-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #5a9bff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #5a9bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #4a8cd4;
+}
+
+.submit-button:active {
+  background-color: #3a7bb2;
+}
+
+.bloc-legal{
+    
+    padding: 10vw;
+    
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+}
+
+.legal-1{
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre prononcée et diffuse */
+    transition: box-shadow 0.3s ease-in-out; 
+    animation: mymove 3s forwards;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+   
+}
+
+.legal-2{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre prononcée et diffuse */
+    transition: box-shadow 0.3s ease-in-out;
+    animation: mymove 3s forwards;
+    margin-top: 2vw;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+}
+
+.legal-3{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease-in-out; 
+    animation: mymove 3s forwards;
+    margin-top: 2vw;
+    border-radius: 25% 10%;
+    background-color: #4D7C8A;
+    padding: 1vw;
+}
+
+.p-legal{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes mymove {
+   0%   {top: 0px; background:#101D42; width: 100px;}
+  100% {top: 200px; background:#4D7C8A; width: 900px;}
+  }
+
+  .span-bonjour{
+    font-family: 10px;
+  }
+
+
+  /* Réduire la taille du footer globalement */
+.MDBFooter {
+    padding-top: 15px; /* Réduire l'espace en haut */
+    padding-bottom: 20px; /* Réduire l'espace en bas */
+    font-size: 14px; /* Réduire la taille du texte du footer */
+  }
+  
+  /* Réduire la taille de la carte Google (ou image de la carte) */
+.localisation {
+    width: 100%;  /* La carte occupe toute la largeur de son conteneur */
+    height: 180px; /* Ajuster la hauteur de la carte */
+    object-fit: cover; /* Garder la carte bien ajustée sans déformation */
+    margin-bottom: 10px; /* Un peu d'espace sous la carte */
+    border-radius: 10px;
+  }
+  
+  .localisation:hover{
+    transform: scale(1.3);
+    }
+
+  /* Réduire la taille des titres dans le footer */
+  #title-localisation, .text-uppercase {
+    font-size: 16px; /* Taille du texte un peu plus petite */
+    margin-bottom: 5px; /* Réduire l'espace sous les titres */
+  }
+  
+  /* Réduire la taille des paragraphes */
+  p {
+    font-size: 12px; /* Taille du texte plus petite pour les paragraphes */
+    line-height: 1.4; /* Espacement plus compact des lignes */
+    margin: 5px 0; /* Réduire l'espace entre les paragraphes */
+  }
+  
+  /* Ajuster la taille du logo pour qu'il soit de la même taille que la carte */
+.logo-footer {
+    width: auto;  /* Laisser la largeur s'ajuster automatiquement */
+    height: 180px; /* Appliquer la même hauteur que la carte */
+    object-fit: contain; /* Garder les proportions correctes du logo */
+  }
+  
+  /* Réduire les espacements entre les colonnes */
+  .MDBCol {
+    margin-bottom: 10px; /* Réduire l'espace entre les colonnes */
+  }
+  
+  /* Réduire le padding autour du texte copyright */
+  .text-center.p-3 {
+    padding: 5px; /* Réduire le padding autour du texte copyright */
+  }
+  .text-center{
+  
+    background-color: #0009144e;
+  }
+  
+  /* Réduire la taille du texte copyright */
+  .copyright a {
+    font-size: 12px; /* Réduire la taille du texte copyright */
+    color: #ffffff; /* Assurer que la couleur est visible sur le fond clair */
+  }
+
+/* Bloc pour les logos des réseaux sociaux - affichage horizontal */
+.bloc-reseaux {
+    display: flex; /* Affichage horizontal (par défaut) */
+    justify-content: center; /* Centrer les logos horizontalement */
+    gap: 15px; /* Espacement entre les logos */
+    margin-top: 10px; /* Espacement entre le titre et les logos */
+  }
+  
+  /* Réduire la taille des logos des réseaux sociaux */
+  .logo-fb, .logo-insta {
+    width: 40px; /* Largeur des logos */
+    height: 40px; /* Hauteur des logos */
+    object-fit: contain; /* Garder les proportions des logos */
+    transition: width 2s, height 2s, transform 2s;
+  }
+  /* Optionnel: espacement entre le titre et les logos */
+  h5.text-uppercase {
+    
+    margin-bottom: 15px; /* Espacement entre le titre et les logos */
+  }
+
+  #h5-contact{
+    margin-top: 1vw;
+  }
+
+  .mention:hover{
+    transform: scale(1.2);
+}
+.copyright:hover{
+    transform: scale(1.2);
+  }
+
+  .logo-insta:hover{
+   
+    transform: rotate(360deg);
+  }
+  .logo-fb:hover{
+    
+    transform: rotate(360deg);
+  }

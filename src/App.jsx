@@ -10,6 +10,8 @@ import AuthContext from './Context/AuthContext'
 import { useState } from 'react'
 import MiniJeux from './Pages/MiniJeux'
 import Horreur from './Pages/Horreur'
+import LegalPage from './Pages/LegalPage'
+import BookingPage from './Pages/BookingPage'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(AuthService.isValid());
@@ -23,6 +25,9 @@ function App() {
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/SigninPage' element={<SigninPage />}></Route>
         <Route path='/login' element={<LoginPage />}></Route>
+        <Route path='/legal' element={<LegalPage />}></Route>
+        <Route path='/Booking' element={<BookingPage />}></Route>
+        
         <Route path='/jeux' element={<MiniJeux />}></Route>
         <Route path='/horreur' element={<Horreur />}></Route>
         

@@ -1,7 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../img/ambiance1.png'
-import img2 from '../img/ambiance2.jpg'
-import img3 from '../img/ambiance3.jpeg'
+
 
 
 
@@ -9,25 +7,25 @@ function MyCarousel() {
   return (
     <Carousel>
       <Carousel.Item interval={3000}>
-        <img src={img1} className="img-carousel" alt="ambiance1" />
+        <img src={`/images/throne.png`} className="img-carousel" alt="ambiance1" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Le Trône De Fer</h3>
+          <p>Plongeriez-vous dans l'intrigue de Westeros ?</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-      <img src={img2} className="img-carousel" alt="ambiance2" />
+      <img src={`/images/starwars.png`} className="img-carousel" alt="ambiance2" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>La Quête Du Jedi</h3>
+          <p>La Rebellion a besoin de vous répondriez-vous présent ?.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-      <img src={img3} className="img-carousel" alt="ambiance3" />
+      <img src={`/images/sorcier.png`} className="img-carousel" alt="ambiance3" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>L'épreuve Des Sorciers</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Répondrez-vous présent à la convocation de Pourdlard ?
           </p>
         </Carousel.Caption>
       </Carousel.Item>
