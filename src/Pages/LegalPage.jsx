@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 
 
+
 const Legal = () => {
    
 
@@ -62,7 +63,7 @@ Le traitement de vos données à caractère personnel est régi par notre Charte
 </p>
 </div>
 </div>
-
+ 
 </Container>
 
 }

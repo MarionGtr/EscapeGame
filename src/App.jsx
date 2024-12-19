@@ -10,6 +10,8 @@ import AuthContext from './Context/AuthContext'
 import { useState } from 'react';
 import LegalPage from './Pages/LegalPage'
 import BookingPage from './Pages/BookingPage'
+import Footer from './Components/Footer'
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(AuthService.isValid());
@@ -19,6 +21,7 @@ function App() {
   <AuthContext.Provider value={{isAuthenticated, setIsAuthenticated, user, setUser}}>
     <BrowserRouter>
       <Navbar />
+      
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/SigninPage' element={<SigninPage />}></Route>
@@ -27,8 +30,11 @@ function App() {
         <Route path='/Booking' element={<BookingPage />}></Route>
         
       </Routes>
+     <Footer/>
     </BrowserRouter>
+    
     </AuthContext.Provider>
+   
   </>
 
 }
