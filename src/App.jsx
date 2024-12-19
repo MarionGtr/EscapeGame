@@ -14,6 +14,7 @@ import LegalPage from './Pages/LegalPage'
 import BookingPage from './Components/BookingPage'
 import DetailsPage from './Pages/DetailsPage'
 import Footer from './Components/Footer'
+import ProfilPage from './Pages/ProfilPage'
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
         <Route path='/legal' element={<LegalPage />}></Route>
         <Route path='/Booking' element={<BookingPage />}></Route>
         <Route path='/details' element={<DetailsPage />}></Route>
+        
+        <Route path ='/Profil' element={<ProfilPage />}></Route>
 
         <Route path='/jeux' element={<MiniJeux />}></Route>
         <Route path='/horreur' element={<Horreur />}></Route>

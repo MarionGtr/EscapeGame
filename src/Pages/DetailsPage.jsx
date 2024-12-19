@@ -39,10 +39,15 @@ const DetailsPage = () => {
 
             </div>
         </div>
-
-        <div className="calendrier">
-            <BookingPage />
+        <div className="div-reservation">
+            <div className="titre-resa">
+                <h1>RÉSERVATION</h1>
+            </div>
+            <div className="calendrier">
+                <BookingPage />
+            </div>
         </div>
+
 
     </Container>
 }
