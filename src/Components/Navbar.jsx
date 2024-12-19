@@ -72,12 +72,13 @@ function NavBar() {
                     Escape à domicile
                   </NavDropdown.Item>
                
-                  <NavDropdown.Item href="#action/3.5">
-                    <Link to="/Booking">Réservation</Link>
+                  <NavDropdown.Item href="/Booking">
+                   Réservation
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Link className="nav-txt" href="#miniJeux">
+                <Link className="nav-txt" href="#miniJeux" to="/Horreur">
                   Mini-jeux
+                 
                 </Link>
                 <Link className="nav-txt" href="#services">
                   Nos services

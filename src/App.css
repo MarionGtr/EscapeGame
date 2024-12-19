@@ -887,7 +887,7 @@ label {
 /* -------------------------CALENDRIER-----------------------------  */
 
 
-.bloc-calendrier {
+
 
 
 
@@ -1214,6 +1214,7 @@ label {
 }
 
 input[type="date"],
+
 select {
     width: 100%;
     padding: 10px;
@@ -1506,11 +1507,15 @@ select:focus {
   }
 
   /* -----------------------------DETAILS PAGE--------------------------------- */
-.page-details {
+  .page-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.corps{
     display: flex;
     flex-direction: row;
     padding-top: 10vw;
-    width: 80%;
     gap: 6vw;
 }
 .partie-gauche {
@@ -1582,3 +1587,15 @@ select:focus {
     justify-content: center;
     font-family: "Michroma", sans-serif;
 }
+
+
+.alert-message {
+    color:#101D42;
+    font-size: 16px; /* Taille de police */
+    font-weight: bold; /* Mettre le texte en gras */
+    background-color: #f2f2f2; /* Fond gris clair pour la visibilité */
+    padding: 10px; /* Espacement autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: 20px; /* Espace en haut */
+    text-align: center; /* Centrer le texte */
+  }
