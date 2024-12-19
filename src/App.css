@@ -119,11 +119,8 @@ body {
 }
 
 .body-homepage {
-    /* background-image: url("src/img/home1.jpg"); */
-    /* background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    height: 70vh;
+  
+    min-height: 100vh; 
     width: 100vw;
 }
 
@@ -766,12 +763,515 @@ label {
     border-bottom: solid var(--light-blue);
     width: 50vw;
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------CALENDRIER-----------------------------  */
 
 
 .bloc-calendrier {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloc-calendrier{
     display: flex;
     padding: 10vw;
 }
@@ -849,10 +1349,9 @@ select:focus {
     justify-content: center;
 }
 
-.legal-1 {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    /* Ombre prononcée et diffuse */
-    transition: box-shadow 0.3s ease-in-out;
+.legal-1{
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease-in-out; 
     animation: mymove 3s forwards;
     border-radius: 25% 10%;
     background-color: #4D7C8A;
@@ -860,9 +1359,8 @@ select:focus {
 
 }
 
-.legal-2 {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    /* Ombre prononcée et diffuse */
+.legal-2{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
     transition: box-shadow 0.3s ease-in-out;
     animation: mymove 3s forwards;
     margin-top: 2vw;
@@ -905,19 +1403,19 @@ select:focus {
 }
 
 
-  /* Réduire la taille du footer globalement */
+  
 .MDBFooter {
-    padding-top: 15px; /* Réduire l'espace en haut */
-    padding-bottom: 20px; /* Réduire l'espace en bas */
-    font-size: 14px; /* Réduire la taille du texte du footer */
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+    font-size: 14px; 
   }
   
-  /* Réduire la taille de la carte Google (ou image de la carte) */
+  
 .localisation {
-    width: 100%;  /* La carte occupe toute la largeur de son conteneur */
-    height: 180px; /* Ajuster la hauteur de la carte */
-    object-fit: cover; /* Garder la carte bien ajustée sans déformation */
-    margin-bottom: 10px; /* Un peu d'espace sous la carte */
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
     border-radius: 10px;
   }
   
@@ -925,65 +1423,65 @@ select:focus {
     transform: scale(1.3);
     }
 
-  /* Réduire la taille des titres dans le footer */
+ 
   #title-localisation, .text-uppercase {
-    font-size: 16px; /* Taille du texte un peu plus petite */
-    margin-bottom: 5px; /* Réduire l'espace sous les titres */
+    font-size: 16px; 
+    margin-bottom: 5px; 
   }
   
-  /* Réduire la taille des paragraphes */
+ 
   p {
-    font-size: 12px; /* Taille du texte plus petite pour les paragraphes */
-    line-height: 1.4; /* Espacement plus compact des lignes */
-    margin: 5px 0; /* Réduire l'espace entre les paragraphes */
+    font-size: 12px; 
+    line-height: 1.4; 
+    margin: 5px 0; 
   }
   
-  /* Ajuster la taille du logo pour qu'il soit de la même taille que la carte */
+  
 .logo-footer {
-    width: auto;  /* Laisser la largeur s'ajuster automatiquement */
-    height: 180px; /* Appliquer la même hauteur que la carte */
-    object-fit: contain; /* Garder les proportions correctes du logo */
+    width: auto;  
+    height: 180px;
+    object-fit: contain; 
   }
   
-  /* Réduire les espacements entre les colonnes */
+  
   .MDBCol {
-    margin-bottom: 10px; /* Réduire l'espace entre les colonnes */
+    margin-bottom: 10px; 
   }
   
-  /* Réduire le padding autour du texte copyright */
+  
   .text-center.p-3 {
-    padding: 5px; /* Réduire le padding autour du texte copyright */
+    padding: 5px; 
   }
   .text-center{
-  
+
     background-color: #0009144e;
   }
   
-  /* Réduire la taille du texte copyright */
+  
   .copyright a {
-    font-size: 12px; /* Réduire la taille du texte copyright */
-    color: #ffffff; /* Assurer que la couleur est visible sur le fond clair */
+    font-size: 12px; 
+    color: #ffffff; 
   }
 
-/* Bloc pour les logos des réseaux sociaux - affichage horizontal */
+
 .bloc-reseaux {
-    display: flex; /* Affichage horizontal (par défaut) */
-    justify-content: center; /* Centrer les logos horizontalement */
-    gap: 15px; /* Espacement entre les logos */
-    margin-top: 10px; /* Espacement entre le titre et les logos */
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+    margin-top: 10px;
   }
   
-  /* Réduire la taille des logos des réseaux sociaux */
+  
   .logo-fb, .logo-insta {
-    width: 40px; /* Largeur des logos */
-    height: 40px; /* Hauteur des logos */
-    object-fit: contain; /* Garder les proportions des logos */
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
     transition: width 2s, height 2s, transform 2s;
   }
-  /* Optionnel: espacement entre le titre et les logos */
+  
   h5.text-uppercase {
     
-    margin-bottom: 15px; /* Espacement entre le titre et les logos */
+    margin-bottom: 15px; 
   }
 
   #h5-contact{
@@ -1005,3 +1503,7 @@ select:focus {
     
     transform: rotate(360deg);
   }
+
+  .MDBFooter {
+    margin-top: auto; 
+}
