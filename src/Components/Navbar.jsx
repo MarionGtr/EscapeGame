@@ -35,7 +35,7 @@ function NavBar() {
                                     Escape à domicile
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Link className="nav-txt" href="#miniJeux">Mini-jeux</Link>
+                            <Link to={"/jeux"}className="nav-txt" href="#miniJeux">Mini-jeux</Link>
                             <Link className="nav-txt" href="#services">Nos services</Link>
                             <Link className="nav-txt" href="#profil">Profil</Link>
 

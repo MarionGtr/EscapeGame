@@ -7,7 +7,9 @@ import Navbar from './Components/Navbar'
 import './App.css'
 import AuthService from './Services/AuthService'
 import AuthContext from './Context/AuthContext'
-import { useState } from 'react';
+import { useState } from 'react'
+import MiniJeux from './Pages/MiniJeux'
+import Horreur from './Pages/Horreur'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(AuthService.isValid());
@@ -21,6 +23,9 @@ function App() {
         <Route path='/' element={<HomePage />}></Route>
         <Route path='/SigninPage' element={<SigninPage />}></Route>
         <Route path='/login' element={<LoginPage />}></Route>
+        <Route path='/jeux' element={<MiniJeux />}></Route>
+        <Route path='/horreur' element={<Horreur />}></Route>
+        
       </Routes>
     </BrowserRouter>
     </AuthContext.Provider>
