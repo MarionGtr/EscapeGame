@@ -76,7 +76,7 @@ function NavBar() {
                    Réservation
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Link className="nav-txt" href="#miniJeux" to="/Horreur">
+                <Link to="/jeux" className="nav-txt" href="#miniJeux">
                   Mini-jeux
                  
                 </Link>
