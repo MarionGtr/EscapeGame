@@ -18,7 +18,7 @@ const MiniJeux = () => {
       <div className="div-titre-card">
         <h1>NOS MINI JEUX</h1>
       </div>
-      <div className="mini-jeux-container">
+      {/* <div className="mini-jeux-container">
         <div  img src="./src/img/TheQuest.jpg" alt="Mini Jeux"className="mini-jeu">
         <div className="mini-jeux-container"><img
           src="./src/img/TheQuest.jpg" // Chemin vers l'image dans le dossier public
@@ -28,8 +28,8 @@ const MiniJeux = () => {
           <h2 className="mini-jeux-image"
         >Jeu de Quete</h2>
           <p>Testez vos connaissances avec des questions captivantes.</p>
-          {/* <button onClick={handleClickQuest}>Jouer</button> */}
-        </div>
+          <button onClick={handleClickQuest}>Jouer</button>
+        </div> */}
        
         <div  img src="./src/img/TheQuest.jpg" alt="Mini Jeux"className="mini-jeu">
         <div className="mini-jeux-container"><img
@@ -45,7 +45,7 @@ const MiniJeux = () => {
        
         
       </div>
-    </div>
+    
   );
 };
 
