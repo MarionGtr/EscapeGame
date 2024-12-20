@@ -751,6 +751,7 @@ button:hover {
 /* -------------------------CALENDRIER-----------------------------  */
 .bloc-calendrier{
     display: flex;
+    padding: 10vw;
 
 }
 
