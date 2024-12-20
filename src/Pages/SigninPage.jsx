@@ -37,7 +37,7 @@ const SigninPage = () => {
         });
         console.log(response);
         // mettre la navigate vers profil
-        navigate("/"); 
+        navigate("/Profil"); 
       } catch (error) {
         console.log(error);
       }

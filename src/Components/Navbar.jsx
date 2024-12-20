@@ -72,12 +72,13 @@ function NavBar() {
                     Escape à domicile
                   </NavDropdown.Item>
                
-                  <NavDropdown.Item href="#action/3.5">
-                    <Link to="/Booking">Réservation</Link>
+                  <NavDropdown.Item href="/Booking">
+                   Réservation
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Link to="/jeux" className="nav-txt" href="#miniJeux">
                   Mini-jeux
+                 
                 </Link>
                 <Link className="nav-txt" href="#services">
                   Nos services
@@ -93,12 +94,12 @@ function NavBar() {
                   </>
                 ) : (
                   <>
-                    {username && <Link className="nav-txt">Profil de {username}</Link>}
-                    <Link to="/" className="nav-txt" onClick={handleLogout}>
+                    {username && <Link to="/Profil" className="nav-txt">Profil de {username}</Link>}
+                    <Link to='/' className="nav-txt" onClick={handleLogout}>
                       Déconnexion
                     </Link>
                   </>
-                )}
+                )}     
               </Nav>
             </div>
           </Navbar.Collapse>
