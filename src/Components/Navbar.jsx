@@ -94,12 +94,12 @@ function NavBar() {
                   </>
                 ) : (
                   <>
-                    {username && <Link className="nav-txt">Profil de {username}</Link>}
-                    <Link to="/" className="nav-txt" onClick={handleLogout}>
+                    {username && <Link to="/Profil" className="nav-txt">Profil de {username}</Link>}
+                    <Link to='/' className="nav-txt" onClick={handleLogout}>
                       Déconnexion
                     </Link>
                   </>
-                )}
+                )}     
               </Nav>
             </div>
           </Navbar.Collapse>
