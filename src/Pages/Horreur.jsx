@@ -10,17 +10,16 @@ const Horreur = () => {
 
     useEffect(() => {
         try {
-            const gameId = 1; // L'ID du mini-jeu "Horreur" (peut être dynamique si vous avez plusieurs jeux)
             MiniGameService.getJeuxId(gameId)
                 .then(response => {
-                    console.log(response.data); // Vérifiez les données récupérées
-                    setGameData(response.data); // Enregistrer les données récupérées
+                    console.log(response.data)
+                    setGameData(response); // Enregistrer les données récupérées
                 })
                 .catch(error => {
                     console.error("Erreur lors de la récupération du mini-jeu :", error);
                 });
         } catch (error) {
-            console.error("Erreur lors de la récupération du mini-jeu :", error);
+            console.error( error);
         }
     }, []);
 
@@ -52,16 +51,18 @@ const Horreur = () => {
         setReward('');
     };
 
-
+    // if (!gameData) {
+    //     return <div>Chargement du jeu...</div>;
+    // }
 
     return (
         <div className="game-container">
-            <h1>{gameData.name}</h1> {/* Nom du jeu */}
-            <p>{gameData.description}</p> {/* Description du jeu */}
-            <p>Diffusion : {gameData.difficulty_level}</p> {/* Niveau de difficulté */}
+            {/* <h1>{gameData.name}</h1> Nom du jeu */}
+            {/* <p>{gameData.description}</p> Description du jeu */}
+            {/* <p>Diffusion : {gameData.difficulty_level}</p> Niveau de difficulté */}
             
             <div className="image-container" onClick={handleClick}>
-                <img src= './src/img/Dead.jpg' alt={gameData.name} className="background-image" />
+                <img src= './src/img/Dead.jpg' alt="Dead" className="background-image" />
                 {!isFound && (
                     <div 
                         className="zone" 
